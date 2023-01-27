@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS: MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Chicle&display=swap" rel="stylesheet"> 
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://kit.fontawesome.com/57070be855.js" crossorigin="anonymous"></script>
+
+  <title>Recipe Book</title>
+</head>
+<body class="yellow lighten-1">
+  <div class="container">
+    <h1 class="heading-main center-align white-text">Recipe Book</h1>
+    
+    <div class="row white form-row">
+      <form id="form">
+
+        <div class="line"></div>
+        <div class="row name-row">
+          <h4>Recipe Name</h4>
+          <div class="input-field">
+            <input type="text" id="recipe-name" placeholder="Spaghetti" required>
+          </div>
+        </div>
+        <div class="row second-row">
+          <div class="line-2"></div>
+          <div class="col m6 s12 ingredient-col">
+            <h4>Ingredients</h4>
+            <div class="row group-input">
+              <div class="col m10 s10">
+                <div class="row">
+                  <div class="input-field col m8 s8">
+                    <input class="ingredient" type="text" placeholder="Item" required>
+                  </div>
+                  <div class="col m4 s4">
+                    <div class="input-field">
+                      <input class="quantity" type="text" placeholder="Quantity" required>
+                    </div>
+                  </div>
+                </div>      
+              </div>
+              
+              <div class="col m2 s2 right-align">
+                <i class="fa-solid fa-circle-xmark red-text text-accent-4"></i>    
+              </div>
+            </div>
+
+            <button type="button" class="z-depth-0 btn orange darken-3 waves-effect waves-light ingredient-btn add-btn"><span class="cross">+</span>Add Ingredient</button>
+          </div>
+          <div class="col m6 s12 direction-col">
+            <h4>Directions</h4>
+            <ol id="direction-list">
+              <li>
+                <div class="list-div row">
+                  <div class="input-field col m10">
+                    <textarea placeholder="Step" class="materialize-textarea direction" required></textarea>
+                  </div>    
+                  <div class="col m2">
+                    <i class="fa-solid fa-circle-xmark red-text text-accent-4"></i>  
+                  </div>
+                </div>
+              </li>        
+              
+            </ol>
+
+            <button type="button" class="z-depth-0 btn orange darken-3 waves-effect waves-light direction-btn add-btn"><span class="cross">+</span>Add Direction</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="line-2"></div>
+
+          <div class="col s6">
+            <div class="input-field">
+              <input type="number" id="servings" placeholder="Number of Servings" required>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="input-field">
+              <input type="text" id="cook-time" placeholder="Cooking Time" required>
+            </div>
+          </div>
+
+          <button id="submit-btn" class="z-depth-0 btn green waves-effect waves-light darken-1" type="submit">Save Recipe</button>
+
+        </div>
+      </form>
+
+    </div>
+
+    <h2 class="heading-sub left-align white-text">Recipe List</h2>
+
+    <!-- Collapsible -->
+    <ul class="collapsible z-depth-0" id="recipe-list">
+      <li>
+        <div class="collapsible-header"><span>Filipino Pancit Canton</span>
+          <div>
+            <i class="fa-solid fa-rectangle-xmark red-text text-accent-4"></i>
+          </div>
+        </div>
+       
+        <div class="collapsible-body">
+          <div class="collapse-headings">
+            <h4>Ingredients</h4>
+            <h4>Quantity</h4>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Chicken Breast Fillet</h5>
+            <h5 class="quantity-val">2 pcs</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Egg Noodles 400g</h5>
+            <h5 class="quantity-val">1 pack</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Carrots</h5>
+            <h5 class="quantity-val">2 pcs</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Onions</h5>
+            <h5 class="quantity-val">2 pcs</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Garlic</h5>
+            <h5 class="quantity-val">7 cloves</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Celery</h5>
+            <h5 class="quantity-val">2 pcs</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Green Beans</h5>
+            <h5 class="quantity-val">15 pcs</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Water</h5>
+            <h5 class="quantity-val">4 cups</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Chicken Stock Cubes</h5>
+            <h5 class="quantity-val">3 pcs</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Soy Sauce</h5>
+            <h5 class="quantity-val">2 tbsp</h5>
+          </div>
+          <div class="ingredient-item">
+            <h5 class="ingredient-val">Black Ground Pepper</h5>
+            <h5 class="quantity-val">2 tsp</h5>
+          </div>
+
+          <div class="line second"></div>
+
+          <div class="collapsible-directions">
+            <h4>Directions</h4>
+
+            <ol class="directions-collapse-list">
+              <li>
+                <p>Start with preparing the ingredients. Mince onion and garlic. Cut the carrots into thin slices, the celery and spring onions into small pieces, and the green beans into slanted cuts. For the chicken breast fillet, shred it into small pieces.</p>
+              </li>
+              <li>
+                <p>Put 1/2 Cup of oil into wok and wait for it to reach the ideal temperature for sauteing. Saute onion and garlic then add carrots. Keep on mixing until the carrots become tender then add the green beans, celery, and shredded chicken.</p>
+              </li>
+              <li>
+                <p>Set aside everything once fully cooked since you will use the same wok for cooking the noodles. After setting aside the vegetables with the chicken shreads, add 4 cups of water into wok and then the chicken stock cubes. Stir until the cubes are completely dissolved.</p>
+              </li>
+              <li>
+                <p>Add the egg noodles and stir until you reach the ideal pasta texture based on your liking. The noodles usually gets cooked in 5 mins of stirring. Then add 4 tbsp of soy sauce onto cooked noodles and mix.</p>
+              </li>
+              <li>
+                <p>Once everything is mixed, add the vegetables you set aside earlier and mix again. Then add the black ground pepper to taste as well as your spring onions. Stir until satisfied. Enjoy!</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="row cook-details">
+            <div>
+              <h4 class="orange-text text-darken-3">Number of Servings: <span>2</span></h4>
+              <h4 class="orange-text text-darken-3">Cooking Time: <span>1hr</span></h4>
+            </div>
+          </div>
+           
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+   <!-- FOOTER -->
+   <footer>
+    
+    <!-- copyright part -->
+    <div class="footer-copyright white">
+      <div class="container black-text">
+        <div>
+          <h4>Recipe Book</h4>
+          <span>&copy; 2023 <span class="copy-name">RMFN</span></span>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+  
+
+  <!-- jQuery -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+  <!-- Compiled and minified JavaScript: MATERIALIZE CSS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="app.js"></script>
+    
+
+  <script>
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+  </script>
+</body>
+</html>

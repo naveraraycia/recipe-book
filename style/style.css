@@ -1,0 +1,279 @@
+html {
+  overflow-x: hidden!important;
+}
+
+.heading-main {
+  font-family: 'Chicle', cursive;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1.5px black!important;
+  font-size: 75px;
+}
+
+.heading-sub{
+  font-family: 'Chicle', cursive;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1.5px black!important;
+  font-size: 60px;
+  margin-top: 6rem;
+}
+
+.form-row {
+  border: 4px solid black;
+  padding: 20px;
+  
+}
+
+.name-row {
+  display: flex;
+  margin-bottom: 0px!important;
+}
+
+.name-row h4 {
+  margin-right: 1rem;
+}
+
+.second-row .line-2{
+  margin-top: 0rem!important;
+}
+
+.line {
+  width: 100%;
+  height: 14px;
+  background-color: black;
+}
+
+#form {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+h4 {
+  font-family: 'Chicle', cursive;
+  text-transform: capitalize;
+}
+
+.group-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px!important;
+}
+
+.fa-circle-xmark:hover {
+  cursor: pointer;
+  color: #FF5757!important;
+}
+
+.fa-circle-xmark {
+  font-size: 2rem;
+}
+
+input, textarea {
+  font-family: 'Assistant', sans-serif!important;
+}
+
+.input-field input[type=text]:focus, .input-field input[type=number]:focus {
+  border-bottom: 1px solid #43A047!important;
+  box-shadow: 0 1px 0 0 #43A047!important;
+}
+
+
+.input-field textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #43A047!important;
+  box-shadow: 0 1px 0 0 #43A047!important;
+}
+
+.btn {
+  text-transform: capitalize!important;
+  font-family: 'Assistant', sans-serif;
+  display: flex!important;
+  font-size: 20px!important;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  height: fit-content!important;
+}
+
+.add-btn {
+  font-size: 16px!important;
+  padding-top: 5px!important;
+  padding-bottom: 5px!important;
+}
+
+.btn span{
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ol > li::marker {
+  font-family: 'Chicle', cursive;
+  font-size: 25px;
+}
+
+/* Textarea ordered list */
+.direction {
+  margin-bottom: 0px!important;
+}
+
+.direction-btn {
+  margin-left: 20px!important;
+  margin-top: 25px!important;
+}
+
+.input-field {
+  flex-grow: 1;
+}
+
+.list-div {
+  display: flex;
+  align-items: center;
+}
+
+.line-2 {
+  width: 100%;
+  background-color: black!important;
+  height: 7px;
+  margin-top: 3.5rem;
+}
+
+#submit-btn {
+  width: 100%;
+  justify-content: center!important;
+  margin-top: 7rem;
+}
+
+
+.collapsible {
+  border: 4px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  font-family: 'Assistant', sans-serif;
+  
+}
+
+.collapsible-header {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible-header i {
+  margin-right: 0px!important;
+}
+
+
+.collapsible-header i:hover {
+  cursor: pointer;
+  color: #FF5757!important;
+}
+
+.collapsible-body {
+  background-color: white!important;
+}
+
+.collapse-headings, .ingredient-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.ingredient-item {
+  border-bottom: 1px solid black;
+}
+
+.collapsible-body .line {
+  margin-bottom: 1rem;
+}
+
+
+.line.second {
+  margin-top: 2.5rem!important;
+}
+
+
+
+.ingredient-item h5 {
+  font-size: 18px!important;
+}
+
+.directions-collapse-list li p {
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.directions-collapse-list li {
+  border-bottom: 1px solid black;
+}
+
+.collapsible-directions {
+  padding-bottom: 2.5rem;
+}
+
+/* Alert Message Modal */
+body {
+  position: relative;
+}
+
+.alert {
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+}
+
+.cook-details h4 {
+  font-size: 24px!important;
+  text-transform: none;
+}
+
+.cook-details span {
+  font-family: 'Assistant', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: black!important;
+}
+
+.cook-details div {
+  display: flex!important;
+}
+
+.cook-details div h4:nth-child(1){
+  margin-right: 1.5rem;
+}
+
+
+.footer-copyright {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-copyright .container div {
+  display: flex;
+  align-items: center!important;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  margin-top: 7rem;
+  border-top: black solid 4px;
+}
+
+.footer-copyright .container div span {
+  font-family: 'Assistant', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.copy-name {
+  font-size: 18px!important;
+}
+
+.footer-copyright .container h4 {
+  margin-right: 1rem;
+  font-size: 35px!important;
+}
+
